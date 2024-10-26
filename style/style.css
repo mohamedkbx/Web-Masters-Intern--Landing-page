@@ -53,6 +53,8 @@ a {
   --container-width: 113.552rem;
   --font-size: 1.8rem;
   --resposive-font-size: 1.5rem;
+  --resposive-font-size-2: 1rem;
+  --resposive-font-size-3: 0.9rem;
 }
 
 /* Global style*/
@@ -88,7 +90,7 @@ a {
   text-align: left;
 }
 .header__nav-link {
-  padding: 8px 28px 8px 28px;
+  padding: 0.8rem 2.8rem;
 }
 
 .header__nav-link.active {
@@ -109,12 +111,48 @@ a {
 }
 /* header end*/
 /* Responsive Header Start*/
-@media (max-width: 1125px) {
+@media (max-width: 112.5rem) {
   .header {
     padding: 1.6rem 2rem;
   }
   .header__container {
     font-size: var(--resposive-font-size);
+  }
+}
+@media (max-width: 87.8rem) {
+  .header__container {
+    font-size: var(--resposive-font-size-2);
+  }
+  .header__logo {
+    width: 10rem;
+  }
+  .header__nav-link {
+    padding: 8px 15px;
+  }
+  .header__info-num {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 425px) {
+  .header__container {
+    font-size: var(--resposive-font-size-2);
+
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .header__info {
+    text-align: center;
+  }
+}
+@media (max-width: 32rem) {
+  .header {
+    padding: 1rem;
+  }
+  .header__container {
+    font-size: var(--resposive-font-size-3);
+  }
+  .header__info-num {
+    font-size: 1.2rem;
   }
 }
 /* Responsive Header End*/
