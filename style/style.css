@@ -111,7 +111,7 @@ a {
 }
 /* header end*/
 /* Responsive Header Start*/
-@media (max-width: 112.5rem) {
+@media (max-width: 1125px) {
   .header {
     padding: 1.6rem 2rem;
   }
@@ -119,7 +119,21 @@ a {
     font-size: var(--resposive-font-size);
   }
 }
-@media (max-width: 87.8rem) {
+@media (max-width: 878px) {
+  .header__container {
+    font-size: var(--resposive-font-size);
+  }
+  .header__logo {
+    width: 10rem;
+  }
+  .header__nav-link {
+    padding: 8px 15px;
+  }
+  .header__info-num {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 638px) {
   .header__container {
     font-size: var(--resposive-font-size-2);
   }
@@ -130,7 +144,7 @@ a {
     padding: 8px 15px;
   }
   .header__info-num {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media (max-width: 425px) {
@@ -144,7 +158,7 @@ a {
     text-align: center;
   }
 }
-@media (max-width: 32rem) {
+@media (max-width: 320px) {
   .header {
     padding: 1rem;
   }
@@ -156,6 +170,65 @@ a {
   }
 }
 /* Responsive Header End*/
+/* hero section start */
+.hero {
+  width: 100%;
+  height: 650px;
+  background-image: url("../images/solar-panels-meadow-bg.webp");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__content {
+  max-width: 72.9rem;
+  position: absolute;
+  top: 17.5rem;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+.hero__title {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 6.293rem;
+  letter-spacing: -0.02%;
+  text-align: left;
+}
+.hero__description {
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: left;
+}
+
+.btn {
+  color: var(--color-white);
+  border-radius: 10.9rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.694rem;
+  letter-spacing: 8%;
+  cursor: pointer;
+}
+
+.hero__btn {
+  letter-spacing: 0.15em;
+  display: flex;
+  gap: 1rem;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  padding: 1.2rem 2.4rem;
+}
+.btn--secondary {
+  padding: 1.2rem 2.4rem;
+  background-color: var(--color-secondary);
+  color: var(--color-black);
+}
+
+/* hero section end */
 
 /*--secondary-light-blue: #EAF7F9;
 
