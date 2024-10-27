@@ -3,3 +3,8 @@
   max-width: var(--container-width);
   margin: 0 auto;
 }
+
+.section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
