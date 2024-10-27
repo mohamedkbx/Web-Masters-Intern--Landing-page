@@ -14,10 +14,12 @@
   --color-logo-bg: #0b9586;
 
   --color-gray: #575757;
-
+  --color-text-gray: #475467;
+  --color-list: #84bd3a;
   --container-width: 113.552rem;
   --section-padding: 8rem;
   --font-size: 1.8rem;
+  --font-size-2: 1.6rem;
   --resposive-font-size: 1.5rem;
   --resposive-font-size-2: 1rem;
   --resposive-font-size-3: 0.9rem;
