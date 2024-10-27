@@ -1,0 +1,30 @@
+.cta {
+  background-image: url(../../images/cta.webp);
+  background-size: cover;
+  height: 50.5rem;
+}
+.cta__center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.cta__content {
+  max-width: 67.8rem;
+  width: 100%;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.cta-heading {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  text-align: left;
+}
+.cta__description {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  text-align: left;
+}

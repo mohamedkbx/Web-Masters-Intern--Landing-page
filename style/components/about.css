@@ -60,3 +60,30 @@
 .list-bullet:not(:last-child) {
   margin-bottom: 1.2rem;
 }
+
+/* about Image */
+.image-container {
+  text-align: right;
+  position: relative;
+}
+
+.overlay-box {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 266px;
+  height: 208px;
+  padding: 24px 30px;
+  border-radius: 12px;
+  background-color: var(--color-secondary);
+  text-align: left;
+}
+.box-text {
+  font-family: Akazan;
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 2.095rem;
+  letter-spacing: 0.9374999403953552px;
+  text-align: left;
+  margin-top: 2.8rem;
+}
