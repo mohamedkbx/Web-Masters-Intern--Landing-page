@@ -28,11 +28,35 @@
   text-align: left;
   color: var(--color-text--gray);
 }
+.about__list {
+  display: flex;
+  gap: 1rem;
+}
+
+.about__list-bullet {
+  display: flex;
+  flex-direction: column;
+}
+.about__list-items {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3rem;
+  text-align: left;
+}
+
+.about__list-item:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
 .list-bullet {
   color: var(--color-list);
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2.328rem;
+  line-height: 3rem;
   letter-spacing: 4px;
   text-align: left;
+}
+.list-bullet:not(:last-child) {
+  margin-bottom: 1.2rem;
 }
