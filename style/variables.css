@@ -1,0 +1,24 @@
+/* variables*/
+:root {
+  --color-primary: #009688;
+  --color-primary-dark: #3cab90;
+  --color-primary-light-1: #a7dabd;
+  --color-primary-light-2: #84bd3a;
+
+  --color-secondary: #ffbb1c;
+
+  --color-white: #ffffff;
+  --color-black: #101828;
+
+  --main-dark-blue: #002529;
+  --color-logo-bg: #0b9586;
+
+  --color-gray: #575757;
+
+  --container-width: 113.552rem;
+  --section-padding: 8rem;
+  --font-size: 1.8rem;
+  --resposive-font-size: 1.5rem;
+  --resposive-font-size-2: 1rem;
+  --resposive-font-size-3: 0.9rem;
+}
