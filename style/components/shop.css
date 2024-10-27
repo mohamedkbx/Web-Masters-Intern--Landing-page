@@ -1,0 +1,17 @@
+.shop__text {
+  text-align: center;
+  width: 93.6rem;
+  margin: 0 auto;
+}
+.shop__title {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+}
+.shop__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-text-gray);
+  margin-top: 2.4rem;
+}
