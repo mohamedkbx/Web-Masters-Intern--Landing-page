@@ -1,0 +1,18 @@
+.values__text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.8rem;
+}
+.values__title {
+  font-size: 4.2rem;
+  font-weight: 600;
+  line-height: 5.083rem;
+  letter-spacing: -0.01em;
+}
+.values__desc {
+  font-size: var(--font-size);
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-text-gray);
+}
