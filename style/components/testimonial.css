@@ -90,3 +90,14 @@
   gap: 1.6rem;
   align-items: center;
 }
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8rem;
+  align-items: flex-start;
+}
+
+.footer__logo {
+  mix-blend-mode: luminosity;
+}
