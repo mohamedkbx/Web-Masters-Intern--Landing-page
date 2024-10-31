@@ -1,7 +1,9 @@
+/* Base Styles */
 .about__content {
   display: grid;
   grid-template-columns: 59.4rem 51.852rem;
   column-gap: 2.3rem;
+  max-width: 100%;
 }
 
 .about__text {
@@ -9,11 +11,13 @@
   flex-direction: column;
   gap: 24px;
 }
+
 .about__heading {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
+
 .about__title {
   font-size: 4.2rem;
   font-weight: 600;
@@ -21,6 +25,7 @@
   letter-spacing: -0.02em;
   text-align: left;
 }
+
 .about__description {
   font-size: var(--font-size-2);
   font-weight: 400;
@@ -28,6 +33,7 @@
   text-align: left;
   color: var(--color-text--gray);
 }
+
 .about__list {
   display: flex;
   gap: 1rem;
@@ -37,6 +43,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .about__list-items {
   display: flex;
   flex-direction: column;
@@ -49,6 +56,7 @@
 .about__list-item:not(:last-child) {
   margin-bottom: 1.2rem;
 }
+
 .list-bullet {
   color: var(--color-list);
   font-size: 2rem;
@@ -57,6 +65,7 @@
   letter-spacing: 4px;
   text-align: left;
 }
+
 .list-bullet:not(:last-child) {
   margin-bottom: 1.2rem;
 }
@@ -78,6 +87,7 @@
   background-color: var(--color-secondary);
   text-align: left;
 }
+
 .box-text {
   font-family: Akazan;
   font-size: var(--font-size);
@@ -86,4 +96,55 @@
   letter-spacing: 0.9374999403953552px;
   text-align: left;
   margin-top: 2.8rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .about__content {
+    grid-template-columns: 1fr; /* Single column layout */
+    grid-template-rows: auto auto;
+    row-gap: 2rem;
+    max-width: 60rem; /* Limit max-width for readability */
+    margin: 0 auto; /* Center content */
+    overflow: hidden;
+  }
+
+  /* Maintain element widths */
+  .about__content > * {
+    max-width: 59.4rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .about__title {
+    font-size: 3rem; /* Reduce font size for mobile */
+    line-height: 4rem;
+  }
+  .about__heading {
+    max-width: 400px;
+  }
+  .image-container {
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about__description,
+  .about__list-items {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .overlay-box {
+    width: 220px;
+    height: 180px;
+    padding: 16px 20px;
+  }
+
+  .box-text {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-top: 1.8rem;
+  }
 }

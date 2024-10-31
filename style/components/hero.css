@@ -2,10 +2,24 @@
 .hero {
   width: 100%;
   height: 650px;
-  background-image: url("../../images/solar-panels-meadow-bg.webp");
   position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.hero__bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: top center;
 }
 
 .hero__taps {
@@ -92,3 +106,75 @@
 }
 
 /* hero section end */
+
+/* Tablet View */
+@media (max-width: 900px) {
+  .hero {
+    height: 500px;
+  }
+
+  .hero__taps {
+    top: 5rem;
+    left: 2rem;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .hero__content {
+    top: 12rem;
+    left: 2rem;
+    gap: 1.5rem;
+    max-width: 60rem;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .hero__description {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .btn--primary,
+  .btn--secondary {
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero__taps {
+    left: 0;
+    padding: 0 1.5rem;
+  }
+  .hero__content {
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 0 1.5rem;
+    left: 0;
+  }
+  .hero__title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: center;
+  }
+  .hero__description {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    font-weight: normal;
+    text-align: center;
+  }
+  .hero__btn {
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn--primary,
+  .btn--secondary {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+}

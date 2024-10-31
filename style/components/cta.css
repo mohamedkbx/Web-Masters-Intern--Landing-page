@@ -28,3 +28,55 @@
   line-height: 2.8rem;
   text-align: left;
 }
+@media (max-width: 900px) {
+  .cta {
+    height: 45rem; /* Adjust height for tablet */
+    background-position: center;
+  }
+
+  .cta__content {
+    max-width: 90%;
+    padding: 0 2rem;
+    gap: 2.8rem; /* Reduce gap slightly */
+  }
+
+  .cta-heading {
+    font-size: 3.6rem;
+    line-height: 4.4rem;
+  }
+
+  .cta__description {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .cta {
+    height: 40rem;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .cta__content {
+    max-width: 100%;
+    padding: 0 1.5rem;
+    gap: 2.4rem;
+    align-items: center;
+  }
+
+  .cta-heading {
+    font-size: 3rem;
+    line-height: 3.6rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .cta__description {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
