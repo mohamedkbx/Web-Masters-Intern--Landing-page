@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: 4rem;
 }
+
 .shop__text {
   text-align: center;
   width: 93.6rem;
@@ -14,6 +15,7 @@
   font-weight: 600;
   line-height: 5.083rem;
 }
+
 .shop__description {
   font-size: 1.6rem;
   font-weight: 400;
@@ -21,35 +23,16 @@
   color: var(--color-text-gray);
   margin-top: 2.4rem;
 }
+
 .cards__layout {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 3.2rem;
-}
-@media (max-width: 900px) {
-  .shop__text {
-    width: 100%;
-    padding: 0 2rem;
-  }
-  .cards__layout {
-    grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
-  }
-}
-@media (max-width: 600px) {
-  .shop__text {
-    width: 100%;
-    padding: 0 1.5rem;
-  }
-  .cards__layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 3.2rem;
-  }
 }
 
 .shop__card {
   box-shadow: 0px 4px 30px 0px #0000000d;
+  max-width: 100%; /* Ensure card scales with container */
 }
 
 .card-desc {
@@ -66,6 +49,7 @@
   text-align: left;
   color: var(--color-black);
 }
+
 .card-description {
   font-size: var(--font-size-2);
   font-weight: 400;
@@ -73,11 +57,13 @@
   text-align: left;
   color: var(--color-text-gray);
 }
+
 .card-view {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
+
 .card__link {
   font-size: var(--font-size-2);
   font-weight: 600;
@@ -90,26 +76,36 @@
   color: var(--color-link);
 }
 
+/* Tablet (max-width: 900px) */
 @media (max-width: 900px) {
   .shop__text {
     width: 100%;
     padding: 0 2rem;
   }
+
   .cards__layout {
     grid-template-columns: 1fr 1fr;
-    gap: 3.2rem;
+    gap: 2.4rem;
+    max-width: 80%; /* Centers the layout and prevents overflow */
+  }
+
+  .shop__card {
+    max-width: 100%; /* Maintain full width of column */
   }
 }
-@media (max-width: 600px) {
+
+@media (max-width: 747px) {
   .shop__text {
     width: 100%;
     padding: 0 1.5rem;
   }
+
   .cards__layout {
-    display: grid;
     grid-template-columns: 1fr;
-    gap: 3.2rem;
+    gap: 2.4rem;
+    margin: auto;
   }
+
   .shop__card .card-img img {
     width: 100%;
     object-fit: cover;
