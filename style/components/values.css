@@ -47,3 +47,38 @@
   text-align: left;
   color: var(--color-text-gray);
 }
+@media (max-width: 900px) {
+  .values {
+    margin-top: -8rem;
+  }
+  .values__text {
+    max-width: 60%;
+    margin: auto;
+  }
+  .values__card-layout {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .values__card {
+    padding: 2rem;
+    height: 32rem;
+  }
+}
+
+@media (max-width: 544px) {
+  .values__card {
+    height: 36rem;
+  }
+}
+@media (max-width: 400px) {
+  .values__card {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .values__card-text {
+    font-size: 1rem;
+  }
+}
