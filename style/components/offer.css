@@ -32,3 +32,16 @@
   font-weight: 500;
   line-height: 2.8rem;
 }
+
+@media (max-width: 425px) {
+  .offer__heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 5.083rem;
+  }
+  .offer__desc {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+  }
+}
