@@ -86,7 +86,8 @@
   .cards__layout {
     grid-template-columns: 1fr 1fr;
     gap: 2.4rem;
-    max-width: 80%; /* Centers the layout and prevents overflow */
+    max-width: 100%; /* Centers the layout and prevents overflow */
+    padding: 0 2rem;
   }
 
   .shop__card {
